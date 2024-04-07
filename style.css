@@ -1,0 +1,242 @@
+@font-face {
+  font-family: 'Young Serif';
+  src: url('/assets/fonts/young-serif/youngserif/YoungSerif-Regular.woff2') format('woff2'),
+       url('/assets/fonts/young-serif/youngserif/YoungSerif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/assets/fonts/outfit/outfit/Outfit-Regular.woff2') format('woff2'),
+       url('/assets/fonts/outfit/outfit/Outfit-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit';
+  src: url('/assets/fonts/outfit/outfit/Outfit-SemiBold.woff2') format('woff2'),
+       url('/assets/fonts/outfit/outfit/Outfit-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Outfit';
+  src: url('/assets/fonts/outfit/outfit/Outfit-Bold.woff2') format('woff2'),
+       url('/assets/fonts/outfit/outfit/Outfit-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Rose-White: hsl(330, 100%, 98%);
+  --Eggshell: hsl(30, 54%, 90%);
+  --Light-Grey: hsl(30, 18%, 87%);
+  --Wenge-Brown: hsl(30, 10%, 34%);
+  --Dark-Charcoal: hsl(24, 5%, 18%);
+  --Nutmeg: hsl(14, 45%, 36%);
+  --Dark-Raspberry: hsl(332, 51%, 32%);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Rose-White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Outfit';
+  margin: 2rem 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Young Serif';
+  font-weight: normal;
+  color: var(--Dark-Charcoal);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  color:  var(--Nutmeg);
+  padding: 1rem 0;
+  font-family: 'Young Serif';
+}
+
+h3 {
+  color: var(--Dark-Raspberry);
+  font-size: 1.3rem;
+}
+
+p {
+  color: var(--Wenge-Brown);
+  font-size: 1.275rem;
+}
+
+.container {
+  background-color: var(--White);
+  color: var(--Wenge-Brown);
+  width: 29rem;
+  line-height: 1.5;
+}
+
+section {
+  padding: 2rem;
+} 
+
+
+figure {
+  width: 29rem;
+
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.preparation {
+  margin: 1rem 0;
+  padding: 2rem;
+  background-color: var(--Rose-White);
+  color: var(--Wenge-Brown);
+  border-radius: 13px;
+  line-height: 2;
+}
+
+.preparation ul {
+  list-style: disc outside;
+  font-size: 1.2rem;
+  width: 15rem;
+  margin-left: 1.6rem;
+}
+
+.preparation li p {
+  margin-left: 0;
+  line-height: 1.2;
+  color: var(--Wenge-Brown);
+}
+.preparation strong {
+  color: var(--Wenge-Brown);
+}
+
+.section {
+  border-bottom: 2px solid var(--Light-Grey);
+  padding-bottom: 1.5rem;
+}
+
+.section:last-child {
+  border-bottom: unset;
+}
+
+ul {
+  list-style: square outside;
+  color: var(--Nutmeg);
+  margin-left: 1.6rem;
+}
+
+li p {
+  margin-left: 1.6rem;
+  color: var(--Wenge-Brown);
+}
+
+ol {
+  list-style: decimal outside;
+  margin-left: 1.6rem;
+  color: var(--Nutmeg);
+}
+
+ol li {
+  padding-bottom: 1rem;
+}
+
+.nutrition p {
+  font-size: 1.29rem;
+}
+
+table {
+  border-collapse: collapse;
+  margin-left: 3.2rem;
+}
+
+tr {
+  border-bottom: 2px solid var(--Light-Grey);
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+td + td {
+  color: var(--Nutmeg);
+  font-weight: bold;
+}
+
+td {
+  width: 29rem;
+  padding: 0.5rem 0;
+}
+
+
+
+.attribution { 
+  text-align: center; 
+  margin: 1rem 0 2rem;
+}
+
+.attribution a { 
+  color: var(--Nutmeg); 
+}
+
+@media (width > 45em) {
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: .9rem;
+  }
+  .container {
+    width: 40rem;
+    border-radius: 13px;
+    padding: 2rem;
+  }
+  section {
+    padding: unset;
+  }
+  figure {
+    width: 40rem;
+  }
+  img {
+    border-radius: 7px;
+    width: 90%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  .preparation ul {
+    width: auto;
+  }
+  li p {
+    margin-left: 1rem;
+  }
+  .nutrition p {
+    font-size: .93rem;
+  }
+  table {
+    margin-left: unset;
+  }
+  td {
+    width: 40rem;
+  }  
+}
